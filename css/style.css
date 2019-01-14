@@ -86,7 +86,7 @@ body {
   top: 0;
   right: 0;
   height: 53px;
-  width: 200px;
+  width: 190px;
   background: #060435;
   border-radius: 10px;
   border-top-left-radius: 0;
@@ -94,7 +94,7 @@ body {
 }
 
 #email__input {
-  width: 1075px;
+  width: 690px;
   background: #060435;
   color: #fff;
   border: none;
@@ -116,7 +116,7 @@ body {
   z-index: 2;
   border-radius: 10px;
   color: #fff;
-  width: 200px;
+  width: 190px;
   border: 0;
   background: #050556;
   font-weight: bold;
