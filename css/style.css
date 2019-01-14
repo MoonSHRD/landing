@@ -12,6 +12,7 @@ body {
 }
 
 #content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -42,6 +43,34 @@ body {
 
 .icon[data-icon='tg'] {
   background: url(../svg/tg.svg);
+}
+
+.icon[data-icon='comment'] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../svg/comment.svg) no-repeat;
+}
+
+.icon[data-icon='mic'] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 80px;
+  background: url(../svg/mic.svg) no-repeat;
+}
+
+.icon[data-icon='share'] {
+  position: absolute;
+  bottom: 20px;
+  right: 40px;
+  background: url(../svg/share.svg) no-repeat;
+}
+
+.icon[data-icon='p2p'] {
+  background: url(../svg/p2p.svg) no-repeat;
+  height: 164px;
+  width: 164px;
 }
 
 #email {
@@ -106,4 +135,34 @@ body {
   color: #fff;
   text-decoration: none;
   background: linear-gradient(0deg, #2bc7ee, #1e6190);
+}
+
+#benefit-1,
+#benefit-2 {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  bottom: 100px;
+  width: 270px;
+  font-size: 25px;
+  text-align: center;
+}
+
+#benefit-1 {
+  left: 95px;
+}
+
+#benefit-2 {
+  right: 95px;
+}
+
+#benefit-icons {
+  width: 140px;
+  height: 140px;
+  position: relative;
+}
+
+#benefit-2__title {
+  margin-top: 20px;
 }
