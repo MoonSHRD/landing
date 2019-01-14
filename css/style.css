@@ -2,12 +2,14 @@ body {
   color: #fff;
   background: linear-gradient(0deg, #18004f, #1c0030);
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 #description {
   max-width: 1250px;
   text-align: center;
-  font-size: 27px;
+  font-size: 24px;
   margin-bottom: 25px;
 }
 
@@ -93,22 +95,22 @@ body {
   border-bottom-left-radius: 0;
 }
 
+#email__input,
+#email__input::placeholder {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 100;
+}
+
 #email__input {
   width: 690px;
   background: #060435;
-  color: #fff;
   border: none;
   height: 53px;
   border-radius: 10px;
   padding: 0 25px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  font-size: 22px;
-}
-
-#email__input::placeholder {
-  color: #fff;
-  font-size: 22px;
 }
 
 #email__submit {
@@ -145,8 +147,9 @@ body {
   align-items: center;
   bottom: 100px;
   width: 270px;
-  font-size: 25px;
+  font-size: 23px;
   text-align: center;
+  font-weight: 400;
 }
 
 #benefit-1 {
