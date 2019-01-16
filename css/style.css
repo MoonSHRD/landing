@@ -11,7 +11,7 @@ body {
   height: 930px;
   width: 1990px;
   background: url('../svg/header.svg') no-repeat;
-  background-position: center -384px;
+  background-position: center -486px;
   background-size: 2890px;
 }
 
@@ -46,14 +46,14 @@ body {
 #after-header {
   content: '';
   display: block;
-  height: 335px;
+  height: 135px;
 }
 
 #logo-bg {
   height: 1020px;
   width: 1896px;
   background: url(../svg/logo-bg.svg) no-repeat;
-  background-position: center -212px;
+  background-position: center -409px;
   background-size: 1857px;
 }
 #content {
@@ -123,9 +123,10 @@ body {
 }
 #email {
   display: flex;
-  width: 100%;
+  width: calc(100% - 40px);
   max-width: 885px;
   position: relative;
+  margin: 0 20px;
 }
 #email__input,
 #email__input::placeholder {
@@ -168,7 +169,7 @@ body {
   display: flex;
   justify-content: space-around;
   width: 100%;
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 75px;
 }
 
@@ -220,6 +221,7 @@ body {
     flex-direction: column;
     width: 100%;
     padding: 0 20px;
+    align-items: center;
   }
   #email::before {
     display: none;
@@ -227,7 +229,10 @@ body {
   #email__input,
   #email__submit {
     width: 100%;
-    border-radius: 10px;
+  }
+  #email__submit {
+    position: relative;
+    margin-top: -2px;
   }
   #email__input {
     border-bottom-left-radius: 0;
