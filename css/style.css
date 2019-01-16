@@ -16,6 +16,7 @@ body {
 }
 
 #description {
+  padding: 0 20px;
   position: relative;
   max-width: 1250px;
   text-align: center;
@@ -126,20 +127,6 @@ body {
   max-width: 885px;
   position: relative;
 }
-#email::before {
-  z-index: 1;
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 53px;
-  width: 195px;
-  background: #060435;
-  border-radius: 10px;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
 #email__input,
 #email__input::placeholder {
   color: #fff;
@@ -147,35 +134,41 @@ body {
   font-weight: 100;
 }
 #email__input {
-  width: calc(100% - 195px);
-  background: #060435;
-  border: none;
+  width: 100%;
+  background: #2d2b65;
+  border: 1px solid #646e99;
   height: 53px;
   border-radius: 10px;
   padding: 0 25px;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
+}
+#email__input:focus {
+  outline: none !important;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 #email__submit {
-  height: 53px;
+  height: 51px;
   z-index: 2;
   border-radius: 10px;
   color: #fff;
   width: 195px;
   border: 0;
-  background: #050556;
+  background: #28b0d8;
   font-weight: bold;
   font-size: 21px;
   cursor: pointer;
+  position: absolute;
+  right: 1px;
+  top: 1px;
 }
-#email__submit:hover {
-  background: rgba(5, 5, 130, 1);
+#email__submit:focus {
+  outline: none;
 }
 
 #footer {
   display: flex;
   justify-content: space-around;
   width: 100%;
+  margin-top: 20px;
   margin-bottom: 75px;
 }
 
@@ -221,7 +214,6 @@ body {
     background-position: center -404px;
   }
   #description {
-    padding: 0 20px;
     font-size: 20px;
   }
   #email {
