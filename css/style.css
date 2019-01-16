@@ -213,6 +213,40 @@ body {
   }
 }
 
+@media only screen and (max-width: 420px) {
+  #after-header {
+    height: 140px;
+  }
+  #logo-bg {
+    background-position: center -404px;
+  }
+  #description {
+    padding: 0 20px;
+    font-size: 20px;
+  }
+  #email {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+  }
+  #email::before {
+    display: none;
+  }
+  #email__input,
+  #email__submit {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #email__input {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  #email__submit {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
 @media only screen and (max-width: 790px) {
   #footer {
     flex-direction: column;
